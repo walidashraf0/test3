@@ -61,3 +61,19 @@ let b = 20;
 
 console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
 //----------------------------------------------------------------
+let userName = "Elzero";
+console.log(userName.charAt(0).toLowerCase());
+console.log(userName[0].toLocaleLowerCase());
+console.log(userName.slice(0,1).toLowerCase());
+console.log(userName.substring(0,1).toLowerCase());
+console.log(userName.split("l",1).toString().toLowerCase());
+console.log(userName[0].toLocaleLowerCase().repeat(3));
+//----------------------------------------------------------------
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+
+console.log(word.includes(letterZ)); // True
+console.log(word.startsWith(letterE.toUpperCase())); // True
+console.log(word.endsWith(letterO.toLowerCase())); // True
