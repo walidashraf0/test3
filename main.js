@@ -56,17 +56,17 @@ console.log(
   '`I\'m In \n\\\nLove \\\\ """ \'\'\'\n++ With ++\n""""""\n""JavaScript""``'
 );
 //----------------------------------------------------------------
-let a = 21;
-let b = 20;
+// let a = 21;
+// let b = 20;
 
-console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
+// console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
 //----------------------------------------------------------------
 let userName = "Elzero";
 console.log(userName.charAt(0).toLowerCase());
 console.log(userName[0].toLocaleLowerCase());
-console.log(userName.slice(0,1).toLowerCase());
-console.log(userName.substring(0,1).toLowerCase());
-console.log(userName.split("l",1).toString().toLowerCase());
+console.log(userName.slice(0, 1).toLowerCase());
+console.log(userName.substring(0, 1).toLowerCase());
+console.log(userName.split("l", 1).toString().toLowerCase());
 console.log(userName[0].toLocaleLowerCase().repeat(3));
 //----------------------------------------------------------------
 let word = "Elzero";
@@ -77,3 +77,67 @@ let letterO = "O";
 console.log(word.includes(letterZ)); // True
 console.log(word.startsWith(letterE.toUpperCase())); // True
 console.log(word.endsWith(letterO.toLowerCase())); // True
+//----------------------------------------------------------------
+console.log("------------");
+console.log(100 == "100"); // true
+console.log(100 != 1000); // true
+console.log(110 > 100 && 10 < 20); // true
+console.log(-10 == "-10"); // true
+console.log(typeof -50 == typeof +"-40"); // true
+console.log(typeof 10 != -"-40"); // true
+console.log(typeof "10" != 10); // true
+console.log(typeof 20 != false); // true
+//----------------------------------------------------------------
+console.log("------------");
+let a = 20;
+let b = 30;
+let c = 10;
+
+console.log((a < b && a > c) || a > b); // true
+console.log(a < b && a > c); // true
+console.log(!(a > b) && !(a > b) && !(a < c) && !(a < c)); // true
+//----------------------------------------------------------------
+console.log("------------");
+let num = 110;
+if (num === 9) {
+  console.log(`00${num}`);
+} else if (num === 20) {
+  console.log(`0${num}`);
+} else if (num === 110) {
+  console.log(`${num}`);
+}
+//----------------------------------------------------------------
+console.log("------------");
+let num1 = 9;
+let str = "9";
+let str2 = "20";
+if (num1 == str) {
+  console.log(`{num1} Is The Same Value As {str}`);
+}
+if (num1 == str) {
+  console.log(`{num1} Is The Same Value As {str} But Not The Same Type`);
+}
+if (typeof num1 === typeof +str2) {
+  console.log(`{num1} Is Not The Same Value Or The Same Type As {str2}`);
+}
+if (typeof str === typeof str2) {
+  console.log(`{str} Is The Same Type As {str2} But Not The Same Value`);
+}
+//----------------------------------------------------------------
+console.log("------------");
+let num2 = 10;
+let num3 = 30;
+let num4 = "30";
+
+if (+num4 > num2) {
+  console.log("30 Is Larger Than 10 And Type string Not The Same Type As number")
+}else if (+num4 == num3) {
+  console.log("30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number")
+}else {
+  console.log("{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}")
+}
+
+// Needed Output
+"30 Is Larger Than 10 And Type string Not The Same Type As number"
+"30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
+"{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}"
