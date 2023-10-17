@@ -181,3 +181,59 @@ switch (day) {
 }
 //----------------------------------------------------------------
 console.log("------------");
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let num5 = 3;
+
+// Method 1
+console.log(myFriends.slice(myFriends.indexOf("Ahmed"), num5)); // ["Ahmed", "Elham", "Osama"];
+
+// Method 2
+console.log(myFriends.slice(false, num5)); // ["Ahmed", "Elham", "Osama"];
+// Method 3
+myFriends.pop();
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+//----------------------------------------------------------------
+console.log("------------");
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+friends.shift();
+friends.pop();
+
+console.log(friends); // ["Eman", "Osama"]
+//----------------------------------------------------------------
+console.log("------------");
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
+
+finalArr = arrOne.concat(arrTwo).sort().reverse();
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+//----------------------------------------------------------------
+console.log("------------");
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+
+console.log(words[website.length][0].slice(website.length).toUpperCase()); // ZERO
+//----------------------------------------------------------------
+console.log("------------");
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+
+// Write 3 Solutions
+if (haystack.includes(needle)) {
+  console.log("Found");
+}
+
+if (haystack.indexOf(needle) == -1) {
+  console.log("Not Found");
+} else {
+  console.log("Found");
+}
+
+if (haystack.lastIndexOf(needle) == -1) {
+  console.log("Not Found");
+} else {
+  console.log("Found");
+}
+//----------------------------------------------------------------
+console.log("------------");
