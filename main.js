@@ -237,3 +237,11 @@ if (haystack.lastIndexOf(needle) == -1) {
 }
 //----------------------------------------------------------------
 console.log("------------");
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+allArrs = arr1.concat(arr2).sort();
+allArrs = allArrs.slice(allArrs.indexOf("F"));
+allArrs = allArrs.join("").toLocaleLowerCase();
+console.log(allArrs); // fxy
