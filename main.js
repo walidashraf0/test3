@@ -130,14 +130,54 @@ let num3 = 30;
 let num4 = "30";
 
 if (+num4 > num2) {
-  console.log("30 Is Larger Than 10 And Type string Not The Same Type As number")
-}else if (+num4 == num3) {
-  console.log("30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number")
-}else {
-  console.log("{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}")
+  console.log(
+    "30 Is Larger Than 10 And Type string Not The Same Type As number"
+  );
+} else if (+num4 == num3) {
+  console.log(
+    "30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
+  );
+} else {
+  console.log(
+    "{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}"
+  );
 }
 
 // Needed Output
-"30 Is Larger Than 10 And Type string Not The Same Type As number"
-"30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
-"{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}"
+("30 Is Larger Than 10 And Type string Not The Same Type As number");
+("30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number");
+("{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}");
+//----------------------------------------------------------------
+console.log("------------");
+let day = "Monday";
+
+switch (day) {
+  case " friday ":
+    console.log(
+      "You Need To Remove Spaces And Make First Letter Capital => Friday"
+    );
+    break;
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("No Appointments Available");
+    break;
+
+  case "Monday":
+  case "Thursday":
+    console.log("From 10:00 AM To 5:00 PM");
+    break;
+
+  case "Tuesday":
+    console.log("From 10:00 AM To 6:00 PM");
+    break;
+
+  case "Wednesday":
+    console.log("From 10:00 AM To 7:00 PM");
+    break;
+
+  default:
+    console.log("Its Not A Valid Day");
+}
+//----------------------------------------------------------------
+console.log("------------");
