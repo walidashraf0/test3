@@ -245,3 +245,99 @@ allArrs = arr1.concat(arr2).sort();
 allArrs = allArrs.slice(allArrs.indexOf("F"));
 allArrs = allArrs.join("").toLocaleLowerCase();
 console.log(allArrs); // fxy
+//----------------------------------------------------------------
+console.log("================================");
+let start = 10;
+let end = 100;
+let exclude = 40;
+
+for (let i = start; i <= end; i += 10) {
+  if (i === 40) {
+    continue;
+  }
+  console.log(i);
+}
+//----------------------------------------------------------------
+console.log("================================");
+let start2 = 10;
+let end2 = 0;
+let stop = 3;
+
+for (let i = start2; i >= stop; i--) {
+  if (i < start2) {
+    console.log(`${end2}${i}`);
+  } else {
+    console.log(i);
+  }
+}
+//----------------------------------------------------------------
+console.log("================================");
+let start3 = 1;
+let end3 = 6;
+let breaker = 2;
+
+for (i = start3; i <= end3; i++) {
+  console.log(i);
+  for (j = start3; j < breaker; j++) {
+    console.log(`-- ${breaker}`);
+    console.log(`-- ${breaker + 2}`);
+  }
+}
+//----------------------------------------------------------------
+console.log("================================");
+let index = 10;
+let jump = 2;
+let k = index;
+
+for (;;) {
+  if (k === jump) {
+    break;
+  }
+
+  if (k > jump) {
+    console.log(k);
+  }
+  k -= jump;
+}
+//----------------------------------------------------------------
+console.log("================================");
+let friends2 = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+
+let d = letter.indexOf(letter); // 0
+// console.log(d);
+
+for (let i = d; i < friends2.length; i++) {
+  if (friends2[i].startsWith(letter.toUpperCase())) {
+    continue;
+  } else {
+    console.log(`"${++d} => ${friends2[i]}"`);
+  }
+}
+//----------------------------------------------------------------
+console.log("================================");
+let start4 = 0;
+let swappedName = "elZerO";
+let result = "";
+
+for (let i = start4; i < swappedName.length; i++) {
+  if (swappedName[i] === swappedName[i].toLowerCase()) {
+    result += swappedName[i].toUpperCase();
+  } else {
+    result += swappedName[i].toLowerCase();
+  }
+}
+console.log(result);
+//----------------------------------------------------------------
+console.log("================================");
+let start5 = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
+
+for (let i =start5; i <mix.length; i++) {
+  if (typeof mix[i] === "string" || mix[i] === 1) {
+    continue;
+  }
+  else {
+    console.log(mix[i]);
+  }
+}
