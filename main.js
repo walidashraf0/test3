@@ -333,11 +333,27 @@ console.log("================================");
 let start5 = 0;
 let mix = [1, 2, 3, "A", "B", "C", 4];
 
-for (let i =start5; i <mix.length; i++) {
+for (let i = start5; i < mix.length; i++) {
   if (typeof mix[i] === "string" || mix[i] === 1) {
     continue;
-  }
-  else {
+  } else {
     console.log(mix[i]);
   }
+}
+//----------------------------------------------------------------
+console.log("================================");
+let friends3 = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index1 = 0;
+let counter = 0;
+
+while (index1 < friends3.length) {
+  if (
+    typeof friends3[index1] === "number" ||
+    friends3[index1].startsWith("A")
+  ) {
+    index1++;
+    continue;
+  }
+  console.log(`${++counter} => ${friends3[index1]}`);
+  index1++;
 }
